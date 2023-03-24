@@ -14,15 +14,15 @@
     <header style="padding-top: 1rem;">
         <h1>Entry Logger</h1>
     </header>
-    <form style="padding: 3rem 0;">
+    <form style="padding: 3rem 0;" onsubmit="return false">
         <input type="number" id="phone" placeholder="phone number" style="width: 100%" required>
         <input type="password" id="password" placeholder="password" style="width: 100%" required>
-        <button onclick="checkLocation()"><b>Confirm Location</b></button>
+        <button onclick="checkLocation()"><b>Confirm Location</b></button><br><br>
+        <div style="display: inline;">
+            <button type="submit" onclick="formSubmit('entry')" style="width: 49.5%;"><b>Log Entry</b></button>
+            <button type="submit" onclick="formSubmit('exit')" style="width: 49.3%;"><b>Log Exit</b></button>
+        </div>
     </form>
-    <div style="display: inline;">
-    <button onclick="formSubmit('entry')" style="width: 49.5%;"><b>Log Entry</b></button>
-    <button onclick="formSubmit('exit')" style="width: 49.3%;"><b>Log Exit</b></button>
-    </div>
     <span class="error" id="error"></span>
 </body>
 <script src="script.js"></script>
