@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- update the version number as needed -->
@@ -34,7 +36,7 @@
 <body>
     <div class="wrapper">
         <div class="formTitle">School Name</div>
-        <button onclick="googleSignIn()">Sign in with Google</button>
+        <button class="googleSignIn" onclick="googleSignIn()"><i class="fab fa-google"></i> Sign in with Google</button>
         <button onclick="confirmLocation()">Confirm location</button>
         <div id="locationText" class="text"><a href="http://example.com/">Location not detected?</a></div>
         <div class="slide-controls">
@@ -45,7 +47,7 @@
             <div class="slider-tab"></div>
         </div>
         <button onclick="logEntry()">Add log</button>
-        <div id="log" class="log">Username entry logged at time</div>
+        <div id="log" class="log"></div>
     </div>
 </body>
 
