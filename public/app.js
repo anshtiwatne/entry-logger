@@ -17,7 +17,7 @@ function googleSignIn() {
         .catch(console.log)
 }
 
-firebase.auth().onAuthStateChanged(user => {
+firebase.auth().onAuthStateChanged(user, time => {
     if (user) {
         if (document.getElementById("entry").checked == true) {
             innerHTML = `${user.displayName}'s entry logged at ${time}`
