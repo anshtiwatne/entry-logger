@@ -10,7 +10,8 @@ function googleSignIn() {
     firebase.auth().signInWithPopup(provider)
         .then(result => {
             const user = result.user
-            document.getElementById("log").innerHTML = `Hello ${user.displayName}`
+            const datetime = new Date();
+            const time = datetime.getTime();
             console.log(user)
         })
         .catch(console.log)
@@ -18,10 +19,19 @@ function googleSignIn() {
 
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
-        console.log("yay")
-        // hello`
+        if (document.getElementById("entry").checked == true) {
+            innerHTML = `${user.displayName}'s entry logged at ${time}`
+        }
+        else if (document.getElementById("exit").checked == true) {
+            innerHTML = `${user.displayName}'s exit logged at ${time}`
+        }
+        document.getElementById("log").innerHTML = innerHTML
     }
     else {
         // not signed in
     }
 })
+
+function checkLocation() {
+    // hello
+}
