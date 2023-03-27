@@ -169,9 +169,9 @@ input[type="radio"] {
         box-shadow: none;
     }
     .formTitle {
-        padding: 0 0 4rem;
+        padding: 0 0 7.5rem;
     }
     #logEntry {
-        margin: 4rem 0 0;
+        margin: 7.5rem 0 0;
     }
 }
