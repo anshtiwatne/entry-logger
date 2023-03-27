@@ -165,13 +165,16 @@ input[type="radio"] {
     html {
         background: white;
     }
+
     .wrapper {
         box-shadow: none;
     }
+
     .formTitle {
-        padding: 0 0 7.5rem;
+        margin-bottom: 15vh;
     }
+
     #logEntry {
-        margin: 7.5rem 0 0;
+        margin-top: 15vh;
     }
 }
