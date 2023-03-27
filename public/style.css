@@ -15,6 +15,7 @@ body {
 
 .wrapper {
     max-width: 335px;
+    margin: 0 auto;
     background: white;
     padding: 30px;
     border-radius: 5px;
@@ -24,7 +25,7 @@ body {
 .formTitle {
     font-size: 35px;
     font-weight: 600;
-    padding: 0rem 3rem 10px;
+    padding: 0 0 10px;
 }
 
 button {
@@ -158,4 +159,19 @@ input[type="radio"] {
     color: #444444;
     /* border: thin solid #888; */
     box-shadow: 1px 1px 5px lightgrey;
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        background: white;
+    }
+    .wrapper {
+        box-shadow: none;
+    }
+    .formTitle {
+        padding: 0 0 4rem;
+    }
+    #logEntry {
+        margin: 4rem 0 0;
+    }
 }
