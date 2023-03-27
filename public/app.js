@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", event => {
     const app = firebase.app()
-    console.log(app)
 })
 
 firebase.auth().signOut()
@@ -10,15 +9,15 @@ function googleSignIn() {
     firebase.auth().signInWithPopup(provider)
         .then(result => {
             const user = result.user
-            const datetime = new Date();
-            const time = datetime.getTime();
-            console.log(user)
         })
         .catch(console.log)
 }
 
-firebase.auth().onAuthStateChanged(user, time => {
+firebase.auth().onAuthStateChanged(user => {
     if (user) {
+        const datetime = new Date();
+        const time = datetime.getTime();
+        console.log("hellllllloooooooooooo")
         if (document.getElementById("entry").checked == true) {
             innerHTML = `${user.displayName}'s entry logged at ${time}`
         }
