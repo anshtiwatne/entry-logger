@@ -31,6 +31,7 @@ let position
 function confirmLocation() {
     navigator.geolocation.getCurrentPosition(checkPosition)
     // TODO: implement google maps geolocation API
+    // TODO: replace lat and long with firebase geopoint
 }
 
 function checkPosition(pos) {
