@@ -63,7 +63,7 @@ function logEntry() {
             attendance.add({
                 name: user.displayName,
                 status: logType,
-                time: datetime.toISOString()
+                time: datetime
             })
             document.getElementById("logEntry").innerHTML = `${logType} logged`.charAt(0).toUpperCase() + `${logType} logged`.slice(1)
         }
