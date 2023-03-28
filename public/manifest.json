@@ -12,13 +12,13 @@
     "categories": [],
     "screenshots": [],
     "icons": [
-      {
-        "src": "icon.png",
-        "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "any"
-      }
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
     ],
     "shortcuts": [],
     "lang": "en"
-  }
+}
