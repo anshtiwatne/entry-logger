@@ -4,12 +4,15 @@
     "dir": "ltr",
     "display": "standalone",
     "name": "LeoFort Logger",
-    "orientation": "any",
+    "orientation": "portrait-primary",
     "scope": "/",
     "short_name": "LeoFort Logger",
     "start_url": "/?source=pwa",
     "theme_color": "#ffffff",
-    "categories": [],
+    "categories": [
+        "security",
+        "utilities"
+    ],
     "screenshots": [],
     "icons": [
         {
@@ -20,5 +23,13 @@
         }
     ],
     "shortcuts": [],
-    "lang": "en"
+    "lang": "en",
+    "display_override": [
+        "standalone",
+        "fullscreen",
+        "window-controls-overlay",
+        "minimal-ui",
+        "browser"
+    ],
+    "prefer_related_applications": false
 }
