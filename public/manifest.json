@@ -1,0 +1,24 @@
+{
+    "background_color": "#ffffff",
+    "description": "Employee entry and exit logging system for LeoFort Academy",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "LeoFort Logger",
+    "orientation": "any",
+    "scope": "/",
+    "short_name": "LeoFort Logger",
+    "start_url": "/?source=pwa",
+    "theme_color": "#ffffff",
+    "categories": [],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+      }
+    ],
+    "shortcuts": [],
+    "lang": "en"
+  }
