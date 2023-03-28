@@ -73,7 +73,8 @@ a:hover {
     overflow: hidden;
     margin: 30px 0 10px 0;
     justify-content: space-between;
-    border: 1px solid lightgrey;
+    border: 0;
+    border-width: 0;
     border-radius: 5px;
     box-shadow: 1px 1px 5px lightgrey;
 }
@@ -89,6 +90,7 @@ a:hover {
     cursor: pointer;
     z-index: 1;
     transition: all 0.6s ease;
+    border: none;
 }
 
 .slide-controls label.exit {
@@ -102,6 +104,7 @@ a:hover {
     left: 0;
     z-index: 0;
     border-radius: 5px;
+    border: none;
     background: linear-gradient(to right, #ffb75e, #ed8f03);
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -159,6 +162,32 @@ input[type="radio"] {
     color: #444444;
     /* border: thin solid #888; */
     box-shadow: 1px 1px 5px lightgrey;
+}
+
+.googleSignIn:disabled {
+    /* background-color: #D4D44; */
+    background-color: whitesmoke;
+    color: #7F7F7F;
+    opacity: 0.8;
+}
+
+.googleSignIn:disabled .fa-google {
+    background: #7F7F7F;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+    border-width: 0;
+}
+
+.formButton:disabled {
+    opacity: 0.8;
+}
+
+*:disabled:hover {
+    cursor: not-allowed;
 }
 
 @media only screen and (max-width: 500px) {

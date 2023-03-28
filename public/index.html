@@ -35,9 +35,9 @@
 
 <body>
     <div class="wrapper">
-        <div class="formTitle">School Name</div>
-        <button class="googleSignIn" onclick="googleSignIn()"><i class="fab fa-google"></i> Sign in with Google</button>
-        <button onclick="confirmLocation()">Confirm location</button>
+        <div class="formTitle">LeoFort Logger</div>
+        <button id="googleSignIn" class="googleSignIn" onclick="googleSignIn()"><i class="fab fa-google"></i><span id="googleSignInText"> Sign in with Google<span></button>
+        <button id="confirmLocation" class="formButton" onclick="confirmLocation()">Confirm location</button>
         <div id="locationText" class="text"><a href="http://example.com/">Location not detected?</a></div>
         <div class="slide-controls">
             <input type="radio" name="slide" id="entry" checked>
@@ -46,8 +46,7 @@
             <label for="exit" class="slide exit">Exit</label>
             <div class="slider-tab"></div>
         </div>
-        <button id="logEntry" onclick="logEntry()">Add log</button>
-        <div id="log" class="log"></div>
+        <button id="logEntry" onclick="logEntry()">Create log</button>
     </div>
 </body>
 
