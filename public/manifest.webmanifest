@@ -16,8 +16,8 @@
     "screenshots": [],
     "icons": [
         {
-            "src": "icon.png",
-            "type": "image/png",
+            "src": "icon.svg",
+            "type": "image/svg+xml",
             "sizes": "512x512",
             "purpose": "any"
         }
