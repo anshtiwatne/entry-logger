@@ -21,7 +21,7 @@ firebase init
 firebase deploy
 ```
 
-## Screenshots & Example use
+## Screenshots & Example Use
 
 Mobile and Desktop interface:
 
