@@ -27,9 +27,9 @@ Desktop and Mobile interface:
 
 <img alt="image" src="https://user-images.githubusercontent.com/83647366/228766122-e94f3bbc-3e08-47e5-b847-5194a8306133.png">
 
-Once a user is signed in with Google, and their location is confirmed using the Geolocation browser API, and entry is created in the firebase firestore database with their name, status and time
+Once a user is signed in with Google, and their location is confirmed using the Geolocation browser API, an entry is created in the firebase firestore database with their name, status and time
 
-<img width="877" alt="image" src="https://user-images.githubusercontent.com/83647366/228764171-6e40e985-2a32-4a96-8cb9-7826d71deb57.png">
+<img alt="image" src="https://user-images.githubusercontent.com/83647366/228764171-6e40e985-2a32-4a96-8cb9-7826d71deb57.png">
 
 ## Contributing
 
