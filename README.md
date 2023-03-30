@@ -23,35 +23,19 @@ firebase deploy
 
 ## Screenshots & Example use
 
+Mobile and Desktop interface:
+<p float="left">
+<img width="591" alt="image" src="https://user-images.githubusercontent.com/83647366/228761761-c47272ce-982a-424c-8b9b-bec52d75f449.png">
+<img width="227.77" alt="image" src="https://user-images.githubusercontent.com/83647366/228762430-12d1178b-68a4-424b-98c2-8c3a4f7a1eb7.png">
+</p>
 
+Once a user is signed in with Google, and their location is confirmed using the Geolocation browser API, and entry is created in the firebase firestore database with their name, status and time
 
-## Choosing words
-
-Given a list of possible words, if you rank every word by what ratio match it is to every guess made till now and choose the one with the lowest rank, you'll get a word that adds the maximum amount of new letters and positions to the existing pool of letters.
-
-```python
-def choose_word(guesses: set, possible_words: set, randomize: bool = False):
-    """Get an optimized choice of a word to be the next guess from the possible words"""
-
-    if randomize: return random.choice(list(possible_words))
-    comparison = {}
-    # The best next guess seems to be the one that differs most from the previous guesses
-    # since this diversifys the letters used therefore maximizing the hints received
-
-    for word in possible_words:
-        for guess in guesses:
-            # get the similarity between the word and the guess
-            comparison[word] = comparison.get(word, 0) + SequenceMatcher(
-                None, word, guess).ratio()
-        # number of total letters - number of unique letters
-        comparison[word] = comparison.get(word, 0) + len(word) - len(set(word))
-
-    return min(comparison, key=comparison.get)
-```
+<img width="877" alt="image" src="https://user-images.githubusercontent.com/83647366/228764171-6e40e985-2a32-4a96-8cb9-7826d71deb57.png">
 
 ## Contributing
 
-Send a pull request if you'd like to make a change or open an issue. You're free to use the guessing algorithm for your own implementations.
+Fork the repository, create a new branch for the fix and send a pull request or open an issue.
 
 ## License
 
