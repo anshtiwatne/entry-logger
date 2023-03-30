@@ -37,4 +37,4 @@ Fork the repository, create a new branch for the fix and send a pull request or 
 
 ## License
 
-[MIT](https://github.com/anshunderscore/wordle_solver/blob/main/LICENSE)
+[MIT](https://github.com/anshtiwatne/entry-logger/blob/main/LICENSE)
