@@ -23,7 +23,7 @@ firebase deploy
 
 ## Screenshots & Example use
 
-Desktop and Mobile interface:
+Mobile and Desktop interface:
 
 <img alt="image" src="https://user-images.githubusercontent.com/83647366/228905007-cf19e6c1-81b3-4e66-8363-84d709c017e7.png">
 
