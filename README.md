@@ -25,7 +25,7 @@ firebase deploy
 
 Desktop and Mobile interface:
 
-<img alt="image" src="https://user-images.githubusercontent.com/83647366/228766122-e94f3bbc-3e08-47e5-b847-5194a8306133.png">
+<img alt="image" src="https://user-images.githubusercontent.com/83647366/228905007-cf19e6c1-81b3-4e66-8363-84d709c017e7.png">
 
 Once a user is signed in with Google, and their location is confirmed using the Geolocation browser API, an entry is created in the firebase firestore database with their name, status and time
 
