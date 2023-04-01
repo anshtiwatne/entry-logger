@@ -21,6 +21,8 @@ firebase init
 firebase deploy
 ```
 
+A PWA is also built for the application, edit the manifest.webmanifest file to customize this PWA. The PWA is available for install through Chrome or can be packaged into an app using [PWA Builder](https://www.pwabuilder.com/)
+
 ## Screenshots & Example Use
 
 Mobile and Desktop interface:
