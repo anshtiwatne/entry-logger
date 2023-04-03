@@ -4,7 +4,7 @@ Attendance logging system using firebase intended to use for schools.
 
 ## Installation & Usage
 
-Clone the public folder and set up your own firebase project
+Clone the public folder and set up your own firebase web project:
 
 ```bash
 git clone anshtiwatne/entry-logger
@@ -21,7 +21,9 @@ firebase init
 firebase deploy
 ```
 
-A PWA is also built for the application, edit the manifest.webmanifest file to customize this PWA. The PWA is available for install through Chrome or can be packaged into an app using [PWA Builder](https://www.pwabuilder.com/)
+Set up a firebase web project and enable Google auth and Firestore before deploying.
+
+A PWA is also built for the application, edit the manifest.webmanifest file to customize this PWA. The PWA is available for install through Chrome or can be packaged into an app using [PWA Builder](https://www.pwabuilder.com/).
 
 ## Screenshots & Example Use
 
@@ -29,7 +31,7 @@ Mobile and Desktop interface:
 
 <img alt="image" src="https://user-images.githubusercontent.com/83647366/228905007-cf19e6c1-81b3-4e66-8363-84d709c017e7.png">
 
-Once a user is signed in with Google, and their location is confirmed using the Geolocation browser API, an entry is then created in the firebase firestore database with their name, status and time
+Once a user is signed in with Google, and their location is confirmed using the Geolocation browser API, an entry is then created in the firebase firestore database with their name, status and time.
 
 <img alt="image" src="https://user-images.githubusercontent.com/83647366/228764171-6e40e985-2a32-4a96-8cb9-7826d71deb57.png">
 
