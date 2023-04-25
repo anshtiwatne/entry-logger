@@ -41,7 +41,7 @@ function checkPosition(pos) {
     if (usr_location.latitude.toFixed(0) == school_loc.latitude.toFixed(0) && usr_location.longitude.toFixed(0) == school_loc.longitude.toFixed(0)) {
         document.getElementById("confirmLocation").innerHTML = "Location confirmed"
         document.getElementById("confirmLocation").disabled = true
-        position = true
+        position = pos
     }
     else {
         console.log(usr_location.latitude.toFixed(1), school_loc.latitude.toFixed(1), usr_location.longitude.toFixed(1), school_loc.longitude.toFixed(1))
@@ -65,7 +65,8 @@ function logEntry() {
             attendance.add({
                 name: user.displayName,
                 status: logType,
-                time: firebase.firestore.Timestamp.now()
+                time: firebase.firestore.Timestamp.now(),
+                location: new firebase.firestore.GeoPoint(position.coords.latitude, position.coords.longitude)
             })
             document.getElementById("logEntry").innerHTML = `${logType} logged`.charAt(0).toUpperCase() + `${logType} logged`.slice(1)
         }
